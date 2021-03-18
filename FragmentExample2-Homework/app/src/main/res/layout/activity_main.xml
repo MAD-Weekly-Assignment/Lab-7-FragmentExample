@@ -58,7 +58,7 @@
 
     <FrameLayout
         android:id="@+id/fragment_container"
-        android:name="com.example.fragmentexample2.SimpleFragment"
+        android:name="com.example.fragments.SimpleFragment"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -75,6 +75,18 @@
         android:text="@string/open"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:layout_marginLeft="16dp" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/next"
+        android:onClick="launchSecondActivity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/open_button"
         android:layout_marginLeft="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
