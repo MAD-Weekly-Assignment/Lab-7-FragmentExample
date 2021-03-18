@@ -53,4 +53,4 @@ public class SimpleFragment extends Fragment {
 
         return rootView;
     }
-}}
+}
