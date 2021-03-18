@@ -29,7 +29,18 @@ public class MainActivity extends AppCompatActivity {
                 mButton.setText(R.string.close);
             }
         }
-        
+
+        // set the click listener for the button
+        mButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (!isFragmentDisplayed) {
+                    displayFragment();
+                } else {
+                    closeFragment();
+                }
+            }
+        });
     }
 
     public void displayFragment() {
